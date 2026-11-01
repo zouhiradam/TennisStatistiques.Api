@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="TennisStatistiques.Api.Tests/TennisStatistiques.Api.Tests.csproj" Id="92481fdf-ac4e-406c-8291-3e2fcfb24748" />
+  <Project Path="TennisStatistiques.Api/TennisStatistiques.Api.csproj" />
+</Solution>

@@ -1,0 +1,17 @@
+@TennisStatistiques.Api_HostAddress = https://localhost:7299
+
+GET {{TennisStatistiques.Api_HostAddress}}/api/TennisStatistiques
+###
+GET {{TennisStatistiques.Api_HostAddress}}/api/TennisStatistiques/52
+###
+GET {{TennisStatistiques.Api_HostAddress}}/api/TennisStatistiques/999
+###
+GET {{TennisStatistiques.Api_HostAddress}}/api/TennisStatistiques/statistics
+###
+POST {{TennisStatistiques.Api_HostAddress}}/api/TennisStatistiques
+Content-Type: application/json
+
+{ "firstname": "Arthur", "lastname": "Fils", "shortname": "A.FIL", "sex": "M",
+  "countryCode": "FRA", "rank": 20, "points": 1500, "weight": 79000, "height": 185, "age": 22 }
+
+###
