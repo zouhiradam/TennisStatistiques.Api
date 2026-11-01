@@ -19,14 +19,12 @@ builder.Services.AddScoped<IPlayerService, PlayerService>();
 var app = builder.Build();
 app.UseExceptionHandler();
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+
+app.MapOpenApi();
+app.UseSwaggerUI(options =>
 {
-    app.MapOpenApi();
-    app.UseSwaggerUI(options =>
-    {
-        options.SwaggerEndpoint("/openapi/v1.json", "TennisStatistiques API v1");
-    });
-}
+    options.SwaggerEndpoint("/openapi/v1.json", "TennisStatistiques API v1");
+});
 
 app.UseHttpsRedirection();
 
