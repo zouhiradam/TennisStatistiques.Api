@@ -1,0 +1,1 @@
+Set-Content .dockerignore "**/bin/`n**/obj/`n.vs/`n.git/"
